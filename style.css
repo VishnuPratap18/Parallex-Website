@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height:100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+.container{
+    position:relative;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-content:center;
+    transform-style: preserve-3d;
+    z-index:-1;
+}
+.background,.forground{
+    position: absolute;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    z-index:-1;
+}
+.background{
+    transform: translateZ(-40px) scale(5);
+
+    
+}
+.forground{
+    transform: translateZ(-30px);
+}
+section{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding:5rem 0 ;
+}
+.box{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+}
+.text{
+    font-size: 1 rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.bg1{
+    background-image: url(https://media.istockphoto.com/id/483531245/photo/parachuting.jpg?s=612x612&w=0&k=20&c=XjMWZS24qmEWf8zLFt6_qJKUo-gjg9IvrvxNZRkokGY=);
+}
+.bg2{
+    background-image: url(https://www.shutterstock.com/image-photo/cyclist-riding-bike-down-rock-260nw-1714931941.jpg);
+}
+.bg3{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW5rZnJHiG5XsbNIj3WT1o_tFs9lQVh9uSug&s);
+}
+.box h2{
+    font-size: 3.5rem;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 20px;
+
+}
+#vishnu{
+    font-size: larger;
+    font-weight: 500;
+    background-color: blue;
+    background-position: center;
+    position:absolute;
+    margin-left: 50%;
+    
+
+}
